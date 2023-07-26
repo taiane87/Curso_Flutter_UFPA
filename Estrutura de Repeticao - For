@@ -1,0 +1,8 @@
+void main(){
+  print("Preparar lancamento");
+  for(int i = 10; i >=1; i-- ){
+     print(i);
+  }
+
+print("Lancamento realizado");
+}
