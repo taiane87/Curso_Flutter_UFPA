@@ -1,0 +1,26 @@
+
+//questao01
+//operadoresaritmeticos
+void main() {
+  int num1 = 8;
+  int num2 = 3; 
+  
+  int soma = 0;
+  int subtracao = 0;
+  int multiplicacao = 0;
+  int restodadivisao = 0;
+  double divisaoDouble = 0;
+  
+  soma = num1+num2;
+  subtracao = num1-num2;
+  multiplicacao = num1 * num2;
+  divisaoDouble = num1 / num2;
+  restodadivisao = num1 ~/num2;
+  
+  print("Soma: $soma");
+  print("Subtracao: $subtracao");
+  print("Multiplicacao: $multiplicacao");
+  print("Divisao: $divisaoDouble");
+  print("Resto da Divisao: $restodadivisao");
+
+   }
