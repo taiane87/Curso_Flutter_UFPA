@@ -1,0 +1,10 @@
+import 'dart:io';
+void main() {
+  print("Digite um numero");
+  int num = int.parse(stdin.readLineSync()!);
+  if(num % 2 == 0){
+    print("O numero e par:$num");
+  } else{
+    print("O numero e impar:$num");
+  }
+}
