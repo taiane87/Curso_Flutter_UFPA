@@ -1,0 +1,38 @@
+Class Veiculo{
+  int quilometragemporano;
+  int numerodeportas;
+  int numerodecilidradas;
+  String partidaeletrica;
+}
+Veiculo({
+  required this.quilometragemporano,
+  required this.numerodeportas,
+  required this.numerodecilidradras,
+  required this.partidaeletrica,
+});
+
+class Carro extends Veiculo{
+  Carro({
+    required super.quilometragemporano,
+    required super numerodeportas,
+    })
+    
+  }
+  class Moto extends Veiculo{
+  Moto({
+    required super.numerodecilindradas,
+    required super.partidaeletrica,
+    })
+    
+  }
+
+void apresenta(){
+    print('Carro: $quilometragemporano, $numerodeportas');
+    print('Moto: $numerodecilindradas, $partidaeletrica');
+ 
+}
+void main(){
+  Veiculo v1 = Veiculo(quilometragemporano:'10',numerodeportas'4');
+  Veiculo v2 = Veiculo(numerodecilindradas:'150', partidaeletrica'Sim');
+  Veiculo.apresenta();
+ }
