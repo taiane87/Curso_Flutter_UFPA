@@ -1,0 +1,23 @@
+Class Veiculo{
+  String marca; 
+  String modelo;
+  int anodefabricacao;
+
+    
+  Veiculo({
+  required this.marca,
+  required this.modelo,
+  required this.anodefabricacao,
+});
+
+  void apresenta(){
+    print('Moto: $marca, $modelo, $anodefabricacao');
+    print('Carro: $marca, $modelo, $anodefabricacao');
+ 
+}
+void main(){
+  Veiculo v1 = Veiculo(marca:'Chevrolet',modelo'Onix', anodefabricacao:'2016',);
+  Veiculo v2 = Veiculo(marca: 'Honda',modelo'CG 160', anodefabricacao:'2004',);
+  Veiculo.apresenta();
+  
+}
