@@ -1,0 +1,8 @@
+Future<String>fetchData() async {
+await Future.delayed(Duration(seconds:3));
+return"Dados obtidos!!";
+}
+void main() async{
+  String dados = await fetchData();
+  print (dados);
+}
