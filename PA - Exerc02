@@ -1,0 +1,12 @@
+//falta terminar 
+import 'dart:async';
+
+Stream <int> countDownStream(int maxNumber) async* {
+  for(int = maxNumber; i>=1; i--){
+    yield i;
+    await Future.delayed(Duration(seconds:1));
+  }
+}
+void main() {
+  print('i');
+}
