@@ -1,0 +1,104 @@
+//incompleto
+import'package:flutter/material.dart';
+
+void main(){
+  runApp(MaterialApp(
+    home: Tela(),
+  ));
+}
+
+class Tela extends  StatelessWidget{
+  @overide
+  Widget build(BuildContext context){
+    return Scaffold(
+      body:Column(
+        children: [
+          Cabecalho(),
+          Corpo(valor: 42),
+          Contador(valor: 3),
+        ],
+      ),
+    );
+  }
+}
+
+class Contador extends StatefulWidget{
+  final int valorInicial;
+  const Contador({super.key, required this.valorInicial});
+  @overide
+  State<Contador> createState()=> _EstadoContador();
+}
+
+class _EstadoContador extends State<Contador> {
+  int valor = 0;
+  
+  @override
+  void initState(){
+    super.initState();
+    valor = widget.valorInicial;
+  }
+  
+  @overide
+  Widget build(BuildContext context){
+    return Column(
+      children:[
+        Text('$valor');
+        TextButton(
+          child: Text('adicionar').
+          onPresed
+        )
+      ]
+    )
+  }
+}
+  
+class _EstadoTela extends State<Tela>{
+  int count = 0;
+  @overide
+  Widget build(BuildContext context){
+    return Column(
+    children:[
+      Text('$count'),
+      TextButton(
+        child: Text('adicionar'),
+        onPressed:(){
+          setState((){
+            count += 1;
+          });
+          
+        },
+      ),
+    ],
+   );
+  }
+}
+class Cabecalho extends StatefulWidget{
+  const Cabecalho({super.key}):
+  
+  @overide
+  State<Cabecalho> createState()=> _EstadoCabecalho():
+  
+}
+
+class _EstadoCabecalho extends State<Cabecalho>{
+  @overide
+  Widget build(BuildContext context){
+    return const Text('Cabeçalho'):
+  }
+}
+class Corpo extends StatefulWidget{
+  final int valor;
+  
+  const Corpo ({super.key, required this.valor});
+  @overide
+  State<Corpo> createState() => _EstadoCorpo():
+  
+}
+
+class _EstadoCorpo extends State<Corpo>{
+  @overide
+  Widget build(BuildContext context){
+    return Text('Corpo:$valor');
+  }
+}
+
